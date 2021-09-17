@@ -1,6 +1,6 @@
 # kafka-project
-## This project requires kafka server. Please make sure your Kafka broker service and ZooKeeper service are started.
-## If you don't have them please install them. 
+### This project requires kafka server. Please make sure your Kafka broker service and ZooKeeper service are started.
+#### If you don't have them please install them. 
 * STEP 1: GET KAFKA
 Download the latest Kafka release and extract it:
 ```
@@ -17,21 +17,21 @@ $ bin/kafka-server-start.sh config/server.properties
 ```
 
 # Let's start
-## Decompress dataset which is called ```data.json.zip```
-## Create python virtual environment and install packages.
+### Decompress dataset which is called ```data.json.zip```
+### Create python virtual environment and install packages.
 ```
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
-## Run db.py file - create tables sqlite database 
+### Run db.py file - create tables sqlite database 
 ```python db.py```
 
-## Run producer
+### Run producer
 ```python producer.py```
 
 
-## Run consumer
+### Run consumer
 ```python consumer.py```
 
 
